@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Safayet Ullah</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body class="p-6 bg-neutral-100">
+    <!-- ======================Header ====================== -->
+    <header>
+        <section class="flex justify-between">
+            <div class="font-semibold text-2xl">
+                <h3>Dashboard</h3>
+            </div>
+            <div class="flex items-center justify-center gap-4">
+                <button
+                    class="w-10 h-10 bg-blue-500 rounded-full text-white font-semibold hover:bg-sky-500 cursor-pointer">B</button>
+
+                <button class="p-2 rounded-full hover:bg-gray-100 relative cursor-pointer">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="size-6">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M14.857 17.082a23.848 23.848 0 0 0 5.454-1.31A8.967 8.967 0 0 1 18 9.75V9A6 6 0 0 0 6 9v.75a8.967 8.967 0 0 1-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 0 1-5.714 0m5.714 0a3 3 0 1 1-5.714 0" />
+                    </svg>
+                </button>
+            </div>
+        </section>
+    </header>
+
+    <!-- ======================Main ====================== -->
+    <main>
+        <!-- ======================Task Section ====================== -->
+        <section class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+            <!-- ======================Total Task====================== -->
+            <div class="bg-white mt-8 rounded-xl shadow-md p-6">
+                <div>
+                    <!-- Total Task -->
+                    <h3 class="text-sm font-medium text-gray-500 mb-4">TOTAL TASK</h3>
+
+                    <div class="flex justify-between items-start">
+
+                        <span>
+                            <p class="text-3xl font-semibold mb-1">3</p>
+                            <p class="text-gray-500 text-sm">11 last month</p>
+                        </span>
+
+                        <span class="bg-blue-100 rounded-full p-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="w-6 h-6 text-blue-600">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M15.666 3.888A2.25 2.25 0 0 0 13.5 2.25h-3c-1.03 0-1.9.693-2.166 1.638m7.332 0c.055.194.084.4.084.612v0a.75.75 0 0 1-.75.75H9a.75.75 0 0 1-.75-.75v0c0-.212.03-.418.084-.612m7.332 0c.646.049 1.288.11 1.927.184 1.1.128 1.907 1.077 1.907 2.185V19.5a2.25 2.25 0 0 1-2.25 2.25H6.75A2.25 2.25 0 0 1 4.5 19.5V6.257c0-1.108.806-2.057 1.907-2.185a48.208 48.208 0 0 1 1.927-.184" />
+                            </svg>
+                        </span>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- ======================Completed Task====================== -->
+            <div class="bg-white mt-8 rounded-xl shadow-md p-6">
+                <div>
+                    <h3 class="text-sm font-medium text-gray-500 mb-4">COMPLETED TASK</h3>
+
+                    <div class="flex justify-between items-start">
+                        <div>
+                            <p class="text-3xl font-semibold mb-1">1</p>
+                            <p class="text-gray-500 text-sm">11 last month</p>
+                        </div>
+
+                        <div class="bg-green-100 rounded-full p-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="size-6 text-green-600">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ======================Task in Progress====================== -->
+            <div class="bg-white mt-8 rounded-xl shadow-md p-6">
+                <div>
+                    <h3 class="text-sm font-medium text-gray-500 mb-4">TASK IN PROGRESS</h3>
+
+                    <div class="flex justify-between items-start">
+                        <div>
+                            <p class="text-3xl font-semibold mb-1">1</p>
+                            <p class="text-gray-500 text-sm">11 last month</p>
+                        </div>
+
+                        <div class="bg-yellow-100 rounded-full p-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="size-6 text-yellow-600">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ======================TODOS====================== -->
+            <div class="bg-white mt-8 rounded-xl shadow-md p-6">
+                <div>
+                    <h3 class="text-sm font-medium text-gray-500 mb-4">TODOS</h3>
+
+                    <div class="flex justify-between items-start">
+                        <div>
+                            <p class="text-3xl font-semibold mb-1">1</p>
+                            <p class="text-gray-500 text-sm">Remaining</p>
+                        </div>
+
+                        <div class="bg-purple-100 rounded-full p-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                                stroke="currentColor" class="w-6 h-6 text-fuchsia-700">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M15.666 3.888A2.25 2.25 0 0 0 13.5 2.25h-3c-1.03 0-1.9.693-2.166 1.638m7.332 0c.055.194.084.4.084.612v0a.75.75 0 0 1-.75.75H9a.75.75 0 0 1-.75-.75v0c0-.212.03-.418.084-.612m7.332 0c.646.049 1.288.11 1.927.184 1.1.128 1.907 1.077 1.907 2.185V19.5a2.25 2.25 0 0 1-2.25 2.25H6.75A2.25 2.25 0 0 1 4.5 19.5V6.257c0-1.108.806-2.057 1.907-2.185a48.208 48.208 0 0 1 1.927-.184" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- ======================Today & All task section ====================== -->
+        <section class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-4">
+
+            <!-- Today's Tasks Section -->
+            <div class="bg-white shadow-md mt-8 rounded-xl p-4">
+                <h1 class="text-2xl font-bold mb-4">Today's Tasks</h1>
+
+                <div class="space-y-3">
+                    <div class="flex items-center justify-between">
+                        <div class="flex items-center gap-2">
+                            <span class="w-2 h-2 rounded-full bg-green-500"></span>
+                            <h3>Complete Project Proposal</h3>
+                        </div>
+                        <h3 class="text-gray-500">High</h3>
+                    </div>
+
+                    <div class="flex items-center justify-between">
+                        <div class="flex items-center gap-2">
+                            <span class="w-2 h-2 rounded-full bg-yellow-500"></span>
+                            <h3>Review team updates</h3>
+                        </div>
+                        <h3 class="text-gray-500">Normal</h3>
+                    </div>
+
+                    <div class="flex items-center justify-between mb-8">
+                        <div class="flex items-center gap-2">
+                            <span class="w-2 h-2 rounded-full bg-blue-500"></span>
+                            <h3>Prepare for client meeting</h3>
+                        </div>
+                        <h3 class="text-gray-500">Low</h3>
+                    </div>
+                </div>
+            </div>
+
+            <!-- All Tasks Section -->
+            <div class="bg-white shadow-md mt-8 rounded-xl p-4 ">
+                <h1 class="text-2xl font-bold mb-4">All Tasks</h1>
+
+                <!-- Table Head -->
+                <div class="grid grid-cols-4 gap-6 items-center font-semibold mb-4">
+                    <div class="text-gray-500">TASK TITLE</div>
+                    <div class="text-gray-500">PRIORITY</div>
+                    <div class="text-gray-500">TEAM</div>
+                    <div class="text-gray-500">CREATED AT</div>
+                </div>
+
+                <!-- Task row 1 -->
+                <div class="grid grid-cols-4 gap-6 items-center mb-3">
+                    <div class="flex items-center gap-2">
+                        <span class="w-2 h-2 rounded-full bg-green-500"></span>
+                        <h3>Test Low Task</h3>
+                    </div>
+
+                    <!-- Priority Col -->
+                    <div>
+                        <span class="bg-blue-100 px-2 py-1 rounded-md text-blue-900 whitespace-nowrap">Low</span>
+                    </div>
+
+                    <!-- Team Col -->
+                    <div class="flex -space-x-3">
+                        <span
+                            class="bg-blue-500 rounded-full text-white h-8 w-8 flex items-center justify-center text-sm border-2 border-white">CA</span>
+                        <span
+                            class="bg-green-500 rounded-full text-white h-8 w-8 flex items-center justify-center text-sm border-2 border-white">JS</span>
+                        <span
+                            class="bg-yellow-500 rounded-full text-white h-8 w-8 flex items-center justify-center text-sm border-2 border-white">B</span>
+                    </div>
+
+                    <!-- Created date -->
+                    <span class="text-gray-500 text-sm">9 months ago</span>
+                </div>
+
+                <!-- Task row 2 -->
+                <div class="grid grid-cols-4 gap-6 items-center mb-3">
+                
+                    <div class="flex items-center gap-2">
+                        <span class="w-2 h-2 rounded-full bg-yellow-500"></span>
+                        <h3>Test Task</h3>
+                    </div>
+
+                    <!-- Priority Col -->
+                    <div>
+                        <span class="bg-zinc-100 px-3 py-1 rounded whitespace-nowrap">Normal</span>
+                    </div>
+
+                    <!-- Team Col -->
+                    <div class="flex -space-x-3">
+                        <span
+                            class="bg-red-500 rounded-full text-white h-8 w-8 flex items-center justify-center text-sm border-2 border-white">AJ</span>
+                        <span
+                            class="bg-fuchsia-500 rounded-full text-white h-8 w-8 flex items-center justify-center text-sm border-2 border-white">EV</span>
+                        <span
+                            class="bg-yellow-500 rounded-full text-white h-8 w-8 flex items-center justify-center text-sm border-2 border-white">B</span>
+                    </div>
+
+                    <!-- Created date -->
+                    <span class="text-gray-500 text-sm">9 months ago</span>
+                </div>
+
+                <!-- Task row 3 -->
+                <div class="grid grid-cols-4 gap-6 items-center mb-3">
+                   
+                    <div class="flex items-center gap-2">
+                        <span class="w-2 h-2 rounded-full bg-red-500"></span>
+                        <h3>Test Task</h3>
+                    </div>
+
+                    <!-- Priority Col -->
+                    <div>
+                        <span class="bg-red-200 px-2 py-1 rounded text-red-700 whitespace-nowrap">High</span>
+                    </div>
+
+                    <!-- Team Col -->
+                    <div class="flex -space-x-3">
+                        <span
+                            class="bg-blue-500 rounded-full text-white h-8 w-8 flex items-center justify-center text-sm border-2 border-white">CA</span>
+                        <span
+                            class="bg-green-500 rounded-full text-white h-8 w-8 flex items-center justify-center text-sm border-2 border-white">JS</span>
+                        <span
+                            class="bg-red-500 rounded-full text-white h-8 w-8 flex items-center justify-center text-sm border-2 border-white">AJ</span>
+                        <span
+                            class="bg-yellow-500 rounded-full text-white h-8 w-8 flex items-center justify-center text-sm border-2 border-white">B</span>
+                    </div>
+
+                    <!-- Created date -->
+                    <span class="text-gray-500 text-sm">9 months ago</span>
+                </div>
+            </div>
+        </section>
+    </main>
+
+</body>
+
+</html>
